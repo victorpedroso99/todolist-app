@@ -29,3 +29,6 @@ Então todos os dados são atualizados imediatamente após qualquer ação.
 Ao abrir o aplicativo, ele faz uma primeira requisição para buscar as tasks existentes no banco de dados. Se as tasks ultrapassarem o tamanho da tela verticalmente, foi adicionado o scroll para rolagem, porém a parte de adicionar uma nova task fica fixa na parte debaixo da tela.
 
 Se não foram encontradas tasks na API ele exibe uma mensagem dizendo que não foram encontradas tasks, caso contrario ele exibe as tasks cadastradas no banco de dados.
+
+
+O arquivo apk do projeto se encontra na raiz e possui o nome: application-6c5980ad-cd79-4cc1-9c0d-aa9573f40974.apk
