@@ -98,17 +98,23 @@ const Todo: React.FC = () => {
   return (
     <View style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
       <ScrollView contentContainerStyle={styles.scrollContainer}>
-        {tasks.map((task, index) => (
-          <Task
-            onCompleted={completeTask}
-            onSelect={toggleSelectTask}
-            onPress={openTaskModal}
-            task={task}
-            index={index}
-            key={task.id}
-            selected={selectedTasks.includes(index)}
-          />
-        ))}
+        {tasks.length === 0 ? ( // Verificação para mensagens de tarefas
+          <Text style={{ color: "#000000", textAlign: "center", marginTop: 20 }}>
+            No tasks found.
+          </Text>
+        ) : (
+          tasks.map((task, index) => (
+            <Task
+              onCompleted={completeTask}
+              onSelect={toggleSelectTask}
+              onPress={openTaskModal}
+              task={task}
+              index={index}
+              key={task.id}
+              selected={selectedTasks.includes(index)}
+            />
+          ))
+        )}
       </ScrollView>
       <View style={styles.formContainer}>
         <CreateTask addTask={addTask} />
