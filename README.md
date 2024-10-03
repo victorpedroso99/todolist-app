@@ -4,7 +4,7 @@
 Foi desenvolvido o aplicativo solicitado, consumindo dados da API desenvolvida em C#, incluindo alguns recursos e funcionalidades novas.
 Também fiz uma refatoração do código, dividindo-o em componentes para maior organização, facilidade de manutenção e reaproveitamento de código.
 
-Para resolver o problema inicial que ocorria ao executar o projeto pela primeira vez, primeiramente atualizei todas as dependências do projeto com o yarn, em seguida atualizei a versão do expo e precisei realizar um ajuste em uma parte do código, pois nas versões mais novas do react native os componentes de texto devem estar envolvidos por <Text> e um texto estava diretamente envolvido por <View>.
+Para resolver o problema inicial que ocorria ao executar o projeto pela primeira vez, primeiramente atualizei todas as dependências do projeto com o yarn, em seguida atualizei a versão do expo e precisei realizar um ajuste em uma parte do código, pois nas versões mais novas do react native os componentes de texto devem estar envolvidos por "<Text>" e um texto estava diretamente envolvido por "<View>".
 
 Após essas alterações o projeto executou sem erros e sem maiores problemas.
 
